@@ -1,0 +1,98 @@
+body{
+	background-color: #44AFE3;
+	margin: 0;
+	padding: 0;
+}
+
+h1{
+	color: #134784;
+	margin: 50px 0px 20px;
+	text-align: center;
+	padding: 20px 0px 10px;
+	font-size: 60px;
+}
+
+.fixed-background{
+	height: 700px;
+	position: relative;
+	background-image: url('http://www.varietyvillage.ca/wp/wp-content/uploads/2016/07/rio-2016-2-1.jpg');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+#rio-wrapper{
+
+}
+
+#countdown-timer{
+	color: #FAC406;
+	/* we dont need margin:auto, its already 100% wide. we need to center the stuff inside the div, not the div itself. Answer: text-align; */
+	text-align: center;
+	filter: blur(10px);
+}
+
+#countdown-timer > div > div{
+	padding: 10px;
+	border-radius: 5px;
+	background-color: #56B62E;
+	/* to get them all on the same line, inline-block to behave like blocks but on same line.*/
+	display: inline-block;
+	box-shadow: 0px 17px 10px -5px rgba(243, 130, 42, 0.4);
+}
+#countdown-timer >div > div:hover{
+	transform:translate(0, -5px);
+	box-shadow: 0px 27px 10px -10px rgba(243, 130, 42, 0.2);
+}
+
+span{
+	padding: 15px 25px;
+	border-radius: 5px;
+	background-color: #108536;
+	display: inline-block;
+	font-size: 35px;
+}
+
+#countdown-timer.small-text{
+	font-size: 35px;
+}
+
+#rogue-wrapper{
+	/* display: none;
+ */}
+
+#countdown-rogue{
+	color: white;
+	/* we dont need margin:auto, its already 100% wide. we need to center the stuff inside the div, not the div itself. Answer: text-align; */
+	text-align: center;
+}
+
+#countdown-rogue > div > div{
+	padding: 10px;
+	border-radius: 5px;
+	background-color: #000000;
+	/* to get them all on the same line, inline-block to behave like blocks but on same line.*/
+	display: inline-block;
+	box-shadow: 0px 17px 10px -5px rgba(243, 130, 42, 0.4);
+}
+#countdown-rogue > div > div:hover{
+	transform:translate(0, -5px);
+	box-shadow: 0px 27px 10px -10px rgba(243, 130, 42, 0.2);
+}
+
+#countdown-rogue span{
+	padding: 15px 25px;
+	border-radius: 5px;
+	background-color: #108536;
+	display: inline-block;
+	font-size: 35px;
+}
+
+#countdown-rogue.small-text{
+	font-size: 35px;
+}
+
+.spacer{
+	height: 900px;
+
+}
