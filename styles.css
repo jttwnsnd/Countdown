@@ -17,7 +17,7 @@ body{
 }
 
 .fixed-background{
-	height: 700px;
+	height: 650px;
 	position: relative;
 	background-image: url('http://www.varietyvillage.ca/wp/wp-content/uploads/2016/07/rio-2016-2-1.jpg');
 	background-size: 100% auto;
@@ -27,6 +27,7 @@ body{
 
 #rio-wrapper{
 	display:;
+	font-family: "Courgette";
 }
 
 #countdown-timer{
@@ -67,6 +68,7 @@ span{
 
  #rogue-wrapper > h1, h2{
  	color: #A08268;
+ 	padding-top: 100px;
  }
 
 #countdown-rogue{
@@ -101,7 +103,47 @@ span{
 	color: #A08268;
 }
 
-.spacer{
-	height: 900px;
+#fantastic-wrapper{
+	display: none;
+ }
 
+ #fantastic-wrapper > h1, h2{
+ 	color: #826B39;
+ 	padding-top: 100px;
+ }
+
+#countdown-fantastic{
+	color: black;
+	/* we dont need margin:auto, its already 100% wide. we need to center the stuff inside the div, not the div itself. Answer: text-align; */
+	text-align: center;
+}
+
+#countdown-fantastic > div > div{
+	padding: 10px;
+	border-radius: 5px;
+	background-color: #59513E;
+	/* to get them all on the same line, inline-block to behave like blocks but on same line.*/
+	display: inline-block;
+	box-shadow: 0px 17px 10px -5px rgba(175, 200, 230, 0.4);
+	border: 1px solid #413831;
+}
+#countdown-fantastic > div > div:hover{
+	transform:translate(0, -6px);
+	box-shadow: 0px 27px 10px -10px rgba(175, 200, 230, 0.2);
+}
+
+#countdown-fantastic span{
+	padding: 15px 25px;
+	border-radius: 5px;
+	background-color: #965E3B;
+	display: inline-block;
+	font-size: 35px;
+}
+
+#countdown-fantastic div.small-text{
+	color: #A08268;
+}
+
+.spacer{
+	height: 300px;
 }
