@@ -4,7 +4,11 @@ body{
 	padding: 0;
 }
 
-h1{
+#buttons{
+	text-align: center;
+}
+
+#rio-wrappr > h1{
 	color: #134784;
 	margin: 50px 0px 20px;
 	text-align: center;
@@ -22,7 +26,7 @@ h1{
 }
 
 #rio-wrapper{
-
+	display:;
 }
 
 #countdown-timer{
@@ -41,7 +45,7 @@ h1{
 	box-shadow: 0px 17px 10px -5px rgba(243, 130, 42, 0.4);
 }
 #countdown-timer >div > div:hover{
-	transform:translate(0, -5px);
+	transform:translate(0, -6px);
 	box-shadow: 0px 27px 10px -10px rgba(243, 130, 42, 0.2);
 }
 
@@ -58,11 +62,15 @@ span{
 }
 
 #rogue-wrapper{
-	/* display: none;
+	display: none;
  */}
 
+ #rogue-wrapper > h1, h2{
+ 	color: #A08268;
+ }
+
 #countdown-rogue{
-	color: white;
+	color: black;
 	/* we dont need margin:auto, its already 100% wide. we need to center the stuff inside the div, not the div itself. Answer: text-align; */
 	text-align: center;
 }
@@ -73,23 +81,24 @@ span{
 	background-color: #000000;
 	/* to get them all on the same line, inline-block to behave like blocks but on same line.*/
 	display: inline-block;
-	box-shadow: 0px 17px 10px -5px rgba(243, 130, 42, 0.4);
+	box-shadow: 0px 17px 10px -5px rgba(213, 184, 152, 0.4);
+	border: 1px solid #B1967B;
 }
 #countdown-rogue > div > div:hover{
-	transform:translate(0, -5px);
-	box-shadow: 0px 27px 10px -10px rgba(243, 130, 42, 0.2);
+	transform:translate(0, -6px);
+	box-shadow: 0px 27px 10px -10px rgba(213, 184, 152, 0.2);
 }
 
 #countdown-rogue span{
 	padding: 15px 25px;
 	border-radius: 5px;
-	background-color: #108536;
+	background-color: #A08268;
 	display: inline-block;
 	font-size: 35px;
 }
 
-#countdown-rogue.small-text{
-	font-size: 35px;
+#countdown-rogue div.small-text{
+	color: #A08268;
 }
 
 .spacer{

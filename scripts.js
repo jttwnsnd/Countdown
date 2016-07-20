@@ -23,7 +23,13 @@ var minutesDigitRogue = document.getElementsByClassName('minutes-rogue')[0];
 var secondsDigitRogue = document.getElementsByClassName('seconds-rogue')[0];
 
 var rioWrapper = document.getElementById('rio-wrapper');
+var rioBody = document.getElementsByTagName('body')[0];
 var rogueWrapper = document.getElementById('rogue-wrapper');
+var rogueBody = document.getElementsByTagName('body')[0];
+var picture = document.getElementsByClassName('fixed-background')[0];
+
+// document.getElementById('rioSwap').addEventListener('click', swapRio());
+// document.getElementById('rogueSwap').addEventListener('click', swapRogue());
 
 // update function for Rogue One clock
 function updateRogue (){
@@ -67,9 +73,28 @@ function updateRio(){
 	weeksDigitRio.innerHTML = weeks;
 }
 
+function swapRio(){
+	rogueWrapper.style.display = "none";
+	rioWrapper.style.display = "block";
+	rioBody.style.backgroundColor = "#44AFE3";
+	picture.style.backgroundImage = "url('http://www.varietyvillage.ca/wp/wp-content/uploads/2016/07/rio-2016-2-1.jpg')";
+	picture.style.height = "650px";
+}
+
+function swapRogue(){
+	rioWrapper.style.display = "none";
+	rogueWrapper.style.display = "block";
+	rogueBody.style.backgroundColor = "#000000";
+	picture.style.backgroundImage = "url('http://static.srcdn.com/wp-content/uploads/Rogue-One-A-Star-Wars-Story-logo.jpg')";
+	picture.style.height = "700px";
+
+}
+
 // which will run our function every 1000 milliseconds (1 sec)
 setInterval(updateRio, 1000);
 setInterval(updateRogue, 1000);
+console.log(picture.style.backgroundImage)
+
 
 
 
